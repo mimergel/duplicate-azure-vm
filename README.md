@@ -1,13 +1,13 @@
-Copy a VM into another VNET/subnet and new Resource Group.
+# Copy an Azure VM into another Subnet and new Resource Group
 
 The target Resource Group will be created if does not yet exist.
 The target subnet must exist.
 
 The script does not move VM extensions or any identities assigned to the Virtual Machine.
-Also, the script will not work for VMs with public IP addresses. Remove these upfront manually.
+Also, the script will not work for VMs with public IP addresses. 
+Remove these upfront manually.
 
-Example:
-
+# Example:
 
 ```ps1
 
