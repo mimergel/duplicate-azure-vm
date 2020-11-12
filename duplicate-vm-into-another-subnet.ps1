@@ -7,17 +7,18 @@
     IMPORTANT: The script does not move VM extensions or any identities assigned to the Virtual Machine.  
 	Also, the script will not work for VMs with public IP addresses. Remove these upfront manually.
 .EXAMPLE
-	./duplicate-vm-into-another-subnet.ps1 -SubscriptionName "Microsoft Azure Internal Consumption" `
+	./duplicate-vm-into-another-subnet.ps1 -SubscriptionName "Azure Subscription Name" `
 	-ResourceGroupName SAP01 `
 	-NewResourceGroupName SAP02 `
 	-VirtualMachineName sapdemo01 `
 	-NewVirtualMachineName sapdemo02 `
-	-TargetVNETName  SAPDemoEnvironmentNetwork `
+	-TargetVNETName  SAPNetwork `
 	-TargetSubnetName  sapdevsubnet 	
 
 .LINKs
     https://github.com/Azure/SAP-on-Azure-Scripts-and-Utilities
 	https://github.com/mimergel/duplicate-azure-vm
+
 .NOTES
     v0.1 - Initial version
 #>
