@@ -9,6 +9,6 @@ Also, the script will not work for VMs with public IP addresses. Remove these up
 Example:
 
 
-<p style="font-family:Courier">
+```ps1
 ./duplicate-vm-into-another-subnet.ps1 -SubscriptionName "Azure Subscription Name" -ResourceGroupName OldRg -NewResourceGroupName NewRg -VirtualMachineName oldvmname -NewVirtualMachineName newvmname -TargetVNETName vnetname -TargetSubnetName subnetname 
-</p>
+```
