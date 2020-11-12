@@ -8,10 +8,4 @@ Also, the script will not work for VMs with public IP addresses. Remove these up
 
 Example:
 
-./duplicate-vm-into-another-subnet.ps1 -SubscriptionName "Azure Subscription Name" `
-	-ResourceGroupName OldRg `
-	-NewResourceGroupName NewRg `
-	-VirtualMachineName oldvmname `
-	-NewVirtualMachineName newvmname `
-	-TargetVNETName  vnetname `
-	-TargetSubnetName  subnetname
+./duplicate-vm-into-another-subnet.ps1 -SubscriptionName "Azure Subscription Name" -ResourceGroupName OldRg -NewResourceGroupName NewRg -VirtualMachineName oldvmname -NewVirtualMachineName newvmname -TargetVNETName  vnetname -TargetSubnetName  subnetname
